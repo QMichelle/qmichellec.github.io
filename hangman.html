@@ -4,14 +4,15 @@
   <title> Hangman! </title>
   <style>
     p { font-size: 24pt;
-        background-color: gold;}
+        background-color: tan;}
     #game { width: 50%; margin: auto; }
     #messages { color: midnightblue; }
     
-    </style>
+    /* work on the delivery one line at a time */
+     </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script>
+ <p>
       // $(document) is the jQuery reference to the whole web page
       $(document).ready(function() {
         // put your javascript here
@@ -20,7 +21,7 @@
         var guesses = 10;           //the number of guesses left
         var guessed = [];           //these are the letters that have already been guesses
         var finished = false; }       // change to the true when the game is finished
-
+  </p>
   $("#guesses").html(guesses);
   $("#word").html(blanks);
 
