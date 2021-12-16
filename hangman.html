@@ -1,24 +1,25 @@
 <!doctype html>
 <html>
 <head>
-  <title>Hangman!</title>
+  <title> Hangman! </title>
   <style>
-    p { font-size: 24pt;}
+    p { font-size: 24pt;
+        background-color: gold;}
     #game { width: 50%; margin: auto; }
     #messages { color: midnightblue; }
+    
     </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
-     p {
       // $(document) is the jQuery reference to the whole web page
       $(document).ready(function() {
         // put your javascript here
-        var word = "bobafett"; // the word to guess
-        var blanks = "--------"; // this variable holds the temporary information
-        var guesses = 10; //the number of guesses left
-        var guessed = []; //these are the letters that have already been guesses
-        var finished = false; // change to the true when the game is finished; }
+        var word = "bobafett";        // the word to guess
+        var blanks = "--------";      // this variable holds the temporary information
+        var guesses = 10;           //the number of guesses left
+        var guessed = [];           //these are the letters that have already been guesses
+        var finished = false; }       // change to the true when the game is finished
 
   $("#guesses").html(guesses);
   $("#word").html(blanks);
